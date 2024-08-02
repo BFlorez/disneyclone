@@ -8,6 +8,10 @@ const Login = (props) => {
         <Cta>
           <CtaLogoOne src="/images/cta-logo-one.svg" alt='loremipsum'/>
           <SignUp>GET ALL THERE</SignUp>
+          <Description>
+            Get Premier Access to Rata abd the last dragon with a Disney+ Subscription. As of 03/06/21, The Disney bundle will the price of increase by $1
+          </Description>
+          <CtaLogoTwo src="/images/cta-logo-two.png" alt='loremipsum'/>
         </Cta>
        <BgImage/>
       </Content>
@@ -60,8 +64,8 @@ const Cta = styled.div`
 `
 
 const CtaLogoOne = styled.img`
-  margin-bottom: 20px;
-  max-width: 60 0px;
+  margin-bottom: 24px;
+  max-width: 600px;
   min-height: 1px;
   display: block;
   width: 100%;
@@ -73,9 +77,9 @@ const SignUp = styled.a`
   background-color: #0063e5;
   width: 100% !important;
   letter-spacing: 1.5px;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   font-size: 18px;
-  padding: 12.5px 0 ;
+  padding: 12.5px 16px;
   border: 1px solid #0063e5;
   border-radius: 4px;
   &:hover{
@@ -83,5 +87,17 @@ const SignUp = styled.a`
 }
 `
 
+const Description = styled.p`
+  color: #f9f9f9;
+  font-size: 11px;
+  margin-top: 24px;
+`
+
+const CtaLogoTwo = styled.img`
+  display: inline-block;
+  margin-bottom: 20px;
+  max-width: 600px;
+  vertical-align: bottom;
+`
 
 export default Login
