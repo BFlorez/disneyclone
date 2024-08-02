@@ -5,6 +5,10 @@ const Login = (props) => {
   return (
     <Container>
       <Content>
+        <Cta>
+          <CtaLogoOne src="/images/cta-logo-one.svg" alt='loremipsum'/>
+          <SignUp>GET ALL THERE</SignUp>
+        </Cta>
        <BgImage/>
       </Content>
     </Container>
@@ -34,7 +38,7 @@ height: 100%
 `
 
 const BgImage = styled.div`
-background-image: url("./images/login-background.jpg");
+background-image: url("images/login-background.jpg");
 background-position: top;
 background-repeat: no-repeat;
 background-size: cover;
@@ -45,5 +49,39 @@ right: 0;
 z-index: -1;
 height: 100%;
 `
+
+const Cta = styled.div`
+  margin-bottom: 2vw;
+  max-width: 650px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+`
+
+const CtaLogoOne = styled.img`
+  margin-bottom: 20px;
+  max-width: 60 0px;
+  min-height: 1px;
+  display: block;
+  width: 100%;
+`
+
+const SignUp = styled.a`
+  font-weight: bold;
+  color: #f9f9f9;
+  background-color: #0063e5;
+  width: 100% !important;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  padding: 12.5px 0 ;
+  border: 1px solid #0063e5;
+  border-radius: 4px;
+  &:hover{
+  background-color: #0483ee;
+}
+`
+
 
 export default Login
